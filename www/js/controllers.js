@@ -33,8 +33,12 @@ angular.module('starter.controllers', [])
 
     $scope.logout = function () {
       if ($scope.isLoggedIn) {
-        $scope.username = "";
-        $scope.isLoggedIn = false;
+
+        setTimeout(function () {
+          $scope.username = "";
+          $scope.isLoggedIn = false;
+        }, 200);
+
         $scope.closeLogin()
       }
     };

@@ -18,10 +18,10 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item ng-if="!isLoggedIn" menu-close ng-click="login()">
+        <ion-item ng-show="!isLoggedIn" menu-close ng-click="login()">
           Login
         </ion-item>
-        <ion-item ng-if="isLoggedIn" menu-close ng-click="logout()">
+        <ion-item ng-show="isLoggedIn" menu-close ng-click="logout()">
           Logout
         </ion-item>
       </ion-list>

@@ -6843,11 +6843,9 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     min-height: 240px;
     width: 60%;
   }
-
   .modal.ng-leave-active {
     bottom: 0;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
     height: 44px;
   }
@@ -6855,36 +6853,29 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
     margin-top: 0;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs-top > .tabs,
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs.tabs-top {
     top: 44px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
     top: 44px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
     top: 88px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
     top: 93px;
   }
-
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
     top: 137px;
   }
-
   .modal-backdrop-bg {
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
     background-color: #000;
     opacity: 0;
   }
-
   .active .modal-backdrop-bg {
     opacity: 0.5;
   }
@@ -12307,7 +12298,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item .badge {
     right: calc(constant(safe-area-inset-right) + 32px);
   }
-
   .item-icon-left {
     padding-left: calc(constant(safe-area-inset-left) + 54px);
   }
@@ -12315,7 +12305,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-icon-left .icon {
     left: calc(constant(safe-area-inset-left) + 11px);
   }
-
   .item-icon-right {
     padding-right: calc(constant(safe-area-inset-right) + 54px);
   }
@@ -12323,7 +12312,6 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-icon-right .icon {
     right: calc(constant(safe-area-inset-right) + 11px);
   }
-
   .item-complex, a.item.item-complex, button.item.item-complex {
     padding: 0;
   }
@@ -12331,23 +12319,19 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
   .item-complex .item-content, a.item.item-complex .item-content, button.item.item-complex .item-content {
     padding: 16px calc(constant(safe-area-inset-right) + 49px) 16px calc(constant(safe-area-inset-left) + 16px);
   }
-
   .item-left-edit.visible.active {
     -webkit-transform: translate3d(calc(constant(safe-area-inset-left) + 8px), 0, 0);
     transform: translate3d(calc(constant(safe-area-inset-left) + 8px), 0, 0);
   }
-
   .list-left-editing .item-left-editable .item-content,
   .item-left-editing.item-left-editable .item-content {
     -webkit-transform: translate3d(calc(constant(safe-area-inset-left) + 50px), 0, 0);
     transform: translate3d(calc(constant(safe-area-inset-left) + 50px), 0, 0);
   }
-
   .item-right-edit {
     right: constant(safe-area-inset-right);
     right: env(safe-area-inset-right);
   }
-
   .platform-ios.platform-browser.platform-ipad {
     position: fixed;
   }

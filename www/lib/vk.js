@@ -1218,6 +1218,7 @@ if (!VK.UI) {
       VK.UI.active = window.open(options.url, '_blank', features);
 
 
+
       VK.UI.active.addEventListener('loadstop', function (event) {
         var split = (event.url).split("#");
         var url = split[0];
@@ -3078,3 +3079,4 @@ try {
   stManager.done('api/openapi.js');
 } catch (e) {
 }
+

@@ -2,11 +2,8 @@ angular.module('starter.controllers', [])
 
   .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $http) {
 
-
     $scope.username = "";
-
     $scope.isLoggedIn = false;
-
 
     $ionicModal.fromTemplateUrl('templates/login.html', {
       scope: $scope
@@ -14,31 +11,40 @@ angular.module('starter.controllers', [])
       $scope.modal = modal;
     });
 
-
     $scope.closeLogin = function () {
       $scope.modal.hide();
     };
 
-
     $scope.login = function () {
       $scope.modal.show();
     };
-    $scope.loginVK = function () {
-      $scope.modal.show();
-    };
-
 
     $scope.doLoginVK = function () {
-
       VK.Auth.login(function (data) {
-        console.log(data);
-        if (data.session) {
-          $scope.username = data.session.user.first_name;
-          $scope.isLoggedIn = true;
-          $scope.modal.hide();
-        }
+        if (data.session) onLoginSuccess(data)
       })
-
     };
+
+    $scope.doLoginMail = function () {
+      MAILRU.Auth.login(function (data) {
+        if (data.session) onLoginSuccess(data)
+      })
+    };
+
+    $scope.logout = function () {
+      if ($scope.isLoggedIn) {
+        $scope.username = "";
+        $scope.isLoggedIn = false;
+        $scope.closeLogin()
+      }
+    };
+
+    function onLoginSuccess(data) {
+      console.log("onLoginSuccess", data);
+      $scope.username = data.session.user.first_name;
+      $scope.isLoggedIn = true;
+      $scope.closeLogin()
+    }
+
   });
 
